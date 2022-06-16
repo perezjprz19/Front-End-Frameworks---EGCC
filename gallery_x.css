@@ -1,0 +1,150 @@
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+:root {
+  --heading-font: 'Roboto', sans-serif;
+  --heading-weight: 700;
+  --subheading-weight:500;
+  --main-font: 'Raleway', sans-serif;
+  --main-font-weight: 400;
+}
+*{
+ margin: 0px;
+ padding: 0px;
+ }
+#main_container{
+  background-color:#FFF;
+  max-width:1400px;
+  }
+
+  h1, h2, h3{
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);
+    color: #090b0f;
+
+  }
+
+  h1 {
+    font-size:2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+  }
+
+  h2 {
+    margin-top: 1em;
+    margin-bottom: .25em;
+  }
+
+  h3 {
+    font-style: italic;
+    font-weight: var(subheading-weight);
+    font-size: 1rem;
+    margin-top: .75em;
+    margin-bottom: 0.25em;
+   
+  }
+
+  p {
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+    line-height: 1.5rem;
+    margin-bottom: 0.5em;
+    color: #46200d;
+
+  }
+
+#intro_column{
+  background-color:#FFF;
+  width: 94%;
+  margin-left: 3%;
+
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height:1.5em;
+    font-style: italic;
+    color: #090b0f;
+  }
+
+#current_column{
+  background-color:#FFF;
+  width: 94%;
+  margin-left: 3%;
+  }
+
+  #coming_soon_column{
+  background-color:#FFF;
+  width: 94%;
+  margin-left: 3%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #main_container {
+    padding: 3em;
+  }
+
+  .gallery_name_bold {
+    font-weight:700;
+  }
+
+  /*First Media Query*/
+
+  @media screen and (min-width:44em){
+
+    #main_container{
+      overflow:hidden;
+      }
+  
+    #intro_column{ 
+      float:left; 
+      margin-left: 5%;
+      width: 90%;
+      }
+  
+    #current_column{
+      width:43%;
+      float:left;
+      margin-left:5%;
+      }
+  
+    #coming_soon_column{
+      width:43%;
+      margin-left:4%;
+      float:left;
+      }
+  
+}
+
+  /*Second Media Query*/
+
+@media screen and (min-width: 75em){
+
+    body{
+      background-image: url("images/x-gray.png");
+      display:flex;
+      justify-content: center;
+       } 
+  
+
+  #intro_column{
+    margin-left:4%;
+    width:26%;
+    }
+
+  #current_column{
+    width:30%;
+    clear:none;
+    margin-left: 4%;
+    }
+
+  #coming_soon_column{
+    width:30%;
+    margin-left:2%;
+    }
+
+}
